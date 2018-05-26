@@ -253,8 +253,8 @@ default         0;
     git clone https://github.com/tpruvot/yiimp.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
-		cd $HOME/yiimp/stratum
-		sudo sed -i 's/if(s2-s1 > 2000)/if(s2-s1 > 50)/' rpc.cpp
+    cd $HOME/yiimp/stratum
+    sudo sed -i 's/if(s2-s1 > 2000)/if(s2-s1 > 50)/' rpc.cpp
     sudo make
     cd $HOME/yiimp/stratum/iniparser
     sudo make
